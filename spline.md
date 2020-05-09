@@ -32,7 +32,7 @@ $$
 
  
 
-![basis function](../.gitbook/assets/bezier.png)
+![basis function](.gitbook/assets/bezier.png)
 
 对于任意的二次贝塞尔曲线，控制点的个数，权重函数和区间是固定的，但事实上可以用更为灵活的方式定义曲线，在这之前需要引入一个概念——Knot Vector（节点向量）。
 
@@ -42,7 +42,7 @@ $$
 
 $$
 Q(t)=\frac{{\displaystyle\sum_{i=0}^{n-1}}B_i\omega_iN_{i,k}(t)}{{\displaystyle\sum_{i=0}^{n-1}}\omega_iN_{i,k}(t)}\\
-N_{i,k}(t)=\frac{t-x_i}{x_{i+k-1}-x_i}N_{i,k-1}(t)+\frac{x_{i+k}-t}{x_{i+k}-x_{i+1}}N_{i+1,k-i}(t)\\
+N_{i,k}(t)=\frac{t-x_i}{x_{i+k-1}-x_i}N_{i,k-1}(t)+\frac{x_{i+k}-t}{x_{i+k}-x_{i+1}}N_{i+1,k-1}(t)\\
 N_{i,\;1}(t)\;=\;\left\{\begin{array}{l}1\;\;\;if\;x_i\leq t<x_{i+1}\\0\;\;\;otherwise\end{array}\right.\\
 $$
 
